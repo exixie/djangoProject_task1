@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <div class ="row" style="margin-top: 4%">
+            <div class="col-md-8 col-12 mx-md-auto mb-3 pb-2 mx-3">
+                <h2 style="color:black; text-align:justify; margin: 6% 2% 1% 2%"><em>{{ post.title }}</em></h2>
+                <p style="color:black; text-align:justify; margin: 0% 1% 3% 2%"><em><u>Автор поста</u>: <b>{{ post.author }}</b></em></p><hr>
+                <p style="color:black; text-align:justify; margin: 4% 2% 2% 2%">{{ post.body|linebreaksbr }}</p>
+            </div>
+
+        </div>
+
+
+{% endblock content%}
